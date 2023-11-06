@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+}
 
 .navbar {
   @apply bg-black flex justify-between items-center;
@@ -43,4 +50,25 @@
   .pagination li button {
     padding: 6px !important;
   }
+}
+
+.slick-dots {
+  bottom: 30px !important;
+}
+
+.slick-dots li {
+  border-radius: 2px !important;
+  width: 50px !important;
+  padding: 0;
+  height: 5px;
+  content: "";
+  overflow: hidden;
+  background-color: rgba(240, 248, 255, 0.338);
+  backdrop-filter: blur(5px);
+}
+.slick-dots li button {
+  width: 100%;
+}
+.slick-active button {
+  background-color: white !important;
 }

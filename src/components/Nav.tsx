@@ -14,7 +14,7 @@ function Nav() {
     window.scrollTo(0, 0);
   }, [location]);
   return (
-    <nav className="navbar">
+    <nav className="navbar px-4">
       <NavLink to="/">
         <img src="../../DimeSafeLogo.png" alt="logo" className="h-6" />
       </NavLink>
